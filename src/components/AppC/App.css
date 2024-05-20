@@ -1,0 +1,77 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.App {
+  text-align: center;
+  width: 720px;
+  margin: 0 auto;
+}
+
+.btn{
+  width: 60px;
+  height: 30px;
+  background-color:  goldenrod;
+  border-radius: 7px;
+  color: white;
+  border: 1px solid  rgb(125, 95, 20);
+  cursor: pointer;
+}
+
+.inputTask{
+  height: 25px;
+}
+
+.btn:hover{
+  background-color:  rgb(250, 195, 54);
+  border: none;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tareas{
+  width: 360px;
+  height: auto;
+  display: flex;
+  margin: 10px auto;
+  padding: 10px;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cccccc;
+  text-align: start;
+}
+
+
+
+.tareacheck{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.delete{
+  height: 30px;
+  background-color: crimson;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+}
+
+.delete:hover{
+opacity: 0.5;
+}
+
+
+
