@@ -7,9 +7,9 @@ import React, { useState, useEffect } from 'react'
 
 function App() {
     
-    const [value, setValue] = useState(() => {
+    const [value] = useState(() => {
       const saved = localStorage.getItem('myKey');
-      return saved !== null ? JSON.parse(saved) : '';
+      return saved !== null ? JSON.parse(saved) : [];
     });
     const [tareas,setTareas]= useState(value);
     

@@ -17,11 +17,13 @@ const Form = (props) => {
 
     const enviarTareas = (event)=>{
       event.preventDefault();
-      props.setTareas([
-        ...props.tareas,
-        tarea
-        ]
-      )
+      if(tarea){
+        props.setTareas([
+          ...props.tareas,
+          tarea
+          ]
+        )
+      }
       setTarea("");
     }
 
