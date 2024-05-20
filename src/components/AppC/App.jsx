@@ -1,16 +1,34 @@
 import './App.css';
 import Form from '../Form/Form'
 import Tasks from '../Task/Task'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 
 
 function App() {
-    const [tareas,setTareas]= useState([]);
+    
+    const [value, setValue] = useState(() => {
+      const saved = localStorage.getItem('myKey');
+      return saved !== null ? JSON.parse(saved) : '';
+    });
+    const [tareas,setTareas]= useState(value);
+    
+
+    useEffect(() => {
+      localStorage.setItem('myKey', JSON.stringify(tareas));
+      
+    }, [tareas]);
+
+
+    
+
+
+  
 
 
 
-  console.log(tareas)
+
+
 
 
   return (
